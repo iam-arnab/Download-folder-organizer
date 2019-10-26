@@ -1,11 +1,11 @@
 filetype = {
     'video' : ['.mp4', '.mkv', '.3gp', '.avi', '.vob', '.m2ts', '.mov', '.mpg4'], 
-    'music' : ['.mp3'],
-    'image' : ['.jpg', '.png', '.xcf', '.jpeg'],
-    'docs' : ['.pdf', '.txt'],
-    'compress' : ['.gz', '.xz', '.bz', '.zip', '.rar'],
-    'disk_usb' : ['.img', '.iso'],
-    'programs' : ['.exe', '.AppImage', '.deb', '.rpm'],
+    'music' : ['.mp3', '.3ga', '.aifc', '.m3u', '.m3u8', '.m4p', '.m4r'],
+    'image' : ['.jpg', '.png', '.xcf', '.jpeg', '.gif', '.tif'],
+    'docs' : ['.pdf', '.txt', '.doc', '.html', '.htm', '.xls', '.xlsx', '.ppt', '.pptx', '.docx', '.csv', '.dat', '.db', '.dbf', '.log', '.mdb', '.sav', '.sql', '.xml', '.epub'],
+    'compress' : ['.gz', '.xz', '.bz', '.zip', '.rar', '.7z', '.arj'],
+    'disk' : ['.img', '.iso', '.toast', '.vcd'],
+    'programs' : ['.exe', '.AppImage', '.deb', '.rpm', '.dmg', '.bin'],
     'torrent' : ['.torrent']
 }
 
@@ -68,7 +68,7 @@ for file in files:
 for file in files:
     temp = file.split('.')
     ext = '.' + temp[-1]
-    for i in filetype['disk_usb']:
+    for i in filetype['disk']:
         if i == ext:
             if os.path.isdir(os.path.join(path, "Disk Images")):
                 shutil.move(os.path.join(path, file), os.path.join(path, "'Disk Images'"))
