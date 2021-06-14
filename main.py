@@ -6,7 +6,7 @@ filetype = {
     'music': ['.mp3', '.3ga', '.aifc', '.m3u', '.m3u8', '.m4p', '.m4r', '.opus'],
     'image': ['.jpg', '.png', '.xcf', '.jpeg', '.gif', '.tif', '.webp'],
     'docs': ['.json', '.pdf', '.txt', '.doc', '.html', '.htm', '.xls', '.xlsx', '.ppt', '.pptx', '.docx', '.csv', '.dat', '.db', '.dbf', '.log', '.mdb', '.sav', '.sql', '.xml', '.epub'],
-    'compress': ['.gz', '.xz', '.bz', '.zip', '.rar', '.7z', '.arj'],
+    'compress': ['.gz', '.xz', '.bz', '.zip', '.rar', '.7z', '.arj', '.txz'],
     'disk': ['.img', '.iso', '.toast', '.vcd'],
     'programs': ['.exe', '.AppImage', '.deb', '.rpm', '.dmg', '.bin', '.jar', '.py'],
     'torrent': ['.torrent'],
